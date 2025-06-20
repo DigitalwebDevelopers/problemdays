@@ -1,0 +1,77 @@
+          <h1 class="page_topic">
+            Day 1 JavaScript Challenge — "Decode the Weird Array" [ ]
+          </h1>
+          <span class="name_credit"
+            ><img
+              src="https://www.youtube.com/favicon.ico"
+              alt="credit"
+              class="credit"
+            />
+            <p>Taught By <b>Code with Deepanshu Knox</b></p></span
+          >
+          <div
+            class="section-separator"
+            style="
+              height: 1px;
+              margin: 18px 0;
+              background: var(--light-gray-color);
+            "
+          ></div>
+
+          <div class="problem_details">
+            <h2 class="page_topic" style="font-size: 1.25rem">
+              🔍 Problem Of the Day —
+            </h2>
+            <p class="page_paras">
+              You’re given an array of mixed types — numbers, strings, nested
+              arrays, and even functions! Your job is to:
+            </p>
+            <p class="page_paras" style="padding-block: 5px">
+              1. &nbsp; Traverse the array deeply. { Analise Code }
+            </p>
+            <p class="page_paras" style="padding-block: 5px">
+              2. &nbsp; Extract and print only the numbers.
+            </p>
+            <p class="page_paras" style="padding-block: 5px">
+              3. &nbsp; Ignore strings, functions, booleans, etc.
+            </p>
+            <p class="page_paras" style="padding-block: 5px">
+              4. &nbsp; Flatten any nested arrays while doing this
+              (recursively).
+            </p>
+          </div>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🧪 Example Input:
+          </h3>
+          <pre
+            class="language-javascript"
+          ><code>// this is the your Array for Traversing
+const input = [ 1, "hello",
+  [2, "world", [3, () => 5]],
+  true,
+  () => 100,
+  [4, ["ignore me", 5]]
+];</code></pre>
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🧪 Expected Output:
+          </h3>
+          <pre
+            class="language-javascript"
+          ><code>[1, 2, 3, 4, 5] // You have to find This</code></pre>
+          <p class="page_paras" style="padding-block: 5px">
+            Functions that return a number when called should also be executed
+            and included.
+          </p>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🔸 Bonus Points for You :
+          </h3>
+
+          <p class="page_paras" style="padding-block: 5px">
+            Sort final output in ascending order.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Write it in a pure functional style (no loops, only recursion and
+            array methods like map, filter, flatMap).
+          </p>
