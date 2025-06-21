@@ -1,0 +1,85 @@
+ <h1 class="page_topic">
+            Day 10 JavaScript Challenge — “Character Frequency Counter”
+          </h1>
+          <span class="name_credit">
+            <img
+              src="https://www.youtube.com/favicon.ico"
+              alt="credit"
+              class="credit"
+            />
+            <p>Taught By <b>Code with Deepanshu Knox</b></p>
+          </span>
+
+          <div
+            class="section-separator"
+            style="
+              height: 1px;
+              margin: 18px 0;
+              background: var(--light-gray-color);
+            "
+          ></div>
+
+          <div class="problem_details">
+            <h2 class="page_topic" style="font-size: 1.25rem">
+              🔍 Problem Of the Day —
+            </h2>
+            <p class="page_paras">
+              You are given a string. Your task is to count how many times each
+              character appears in it and return the frequency in object form.
+            </p>
+            <p class="page_paras">
+              All spaces should be ignored, and the comparison must be
+              case-insensitive.
+            </p>
+          </div>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🧪 Example Input:
+          </h3>
+          <pre
+            class="language-javascript"
+          ><code>const input = "Knock knock, who's there?";
+</code></pre>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🔸 Your Task to Perform
+          </h3>
+          <p class="page_paras" style="padding-block: 5px">
+            Return an object with lowercase letters as keys and their count as
+            values.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Ignore spaces and punctuation marks.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Loop through the string.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Track how many times each letter appears using an object.
+          </p>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🧪 Example Output:
+          </h3>
+          <pre class="language-javascript"><code>
+{
+  k: 4, n: 2, o: 3,
+  c: 1, h: 2, w: 1,
+  s: 1, t: 1, e: 2,
+  r: 1 // This shows that how many characters are repeated
+}
+</code></pre>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🔸 Bonus Tip for You
+          </h3>
+          <p class="page_paras" style="padding-block: 5px">
+            Avoid using regular expressions for filtering — try pure character
+            logic with <code>char >= 'a' && char <= 'z'</code>.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Try solving it with just a single loop (no nested ones).
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Convert all characters to lowercase before comparison.
+          </p>
