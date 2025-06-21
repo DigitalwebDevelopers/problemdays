@@ -1,0 +1,58 @@
+<h1 class="page_topic">
+  Day 12 JavaScript Challenge — “Array Jump Checker”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    Given an array of integers where each element represents the max jump length at that position, return whether it's possible to reach the last index starting from the first index.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>
+const input = [2, 3, 1, 1, 4];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+
+<p class="page_paras" style="padding-block: 5px">
+  Starting from index 0, use the number at each index to determine how far you can jump.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Return <code>true</code> if you can reach the last index, otherwise return <code>false</code>.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  The number represents max jump size from that position.
+</p>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Output:</h3>
+<pre class="language-javascript"><code>
+true // Because you can reach the end via jumps: 2 → 3 → 4
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧠 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Try solving it in one loop. Track the maximum index you can reach.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Handle edge cases like [0, 2, 3] — should return false.
+</p>
