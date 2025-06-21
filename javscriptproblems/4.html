@@ -1,0 +1,71 @@
+          <h1 class="page_topic">Day 4 JavaScript Challenge — “Deep Count”</h1>
+          <span class="name_credit">
+            <img
+              src="https://www.youtube.com/favicon.ico"
+              alt="credit"
+              class="credit"
+            />
+            <p>Taught By <b>Code with Deepanshu Knox</b></p>
+          </span>
+
+          <div
+            class="section-separator"
+            style="
+              height: 1px;
+              margin: 18px 0;
+              background: var(--light-gray-color);
+            "
+          ></div>
+
+          <div class="problem_details">
+            <h2 class="page_topic" style="font-size: 1.25rem">
+              🔍 Problem Of the Day —
+            </h2>
+            <p class="page_paras">
+              You are given a nested array (array inside array). Your task is to
+              count how many total elements (non-array) are present,
+            </p>
+            <p class="page_paras">no matter how deep the nesting is.</p>
+          </div>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🧪 Example Input:
+          </h3>
+          <pre
+            class="language-javascript"
+          ><code>const input = [1, [2, [3, 4], 5], 6];</code></pre>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🔸 Your Task to Perform
+          </h3>
+          <p class="page_paras" style="padding-block: 5px">
+            Loop through the array and go inside nested arrays too using
+            recursion.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Count how many non-array elements (like numbers, strings, booleans)
+            are there in total.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Return that count.
+          </p>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🧪 Example Output:
+          </h3>
+          <pre
+            class="language-javascript"
+          ><code>6 // Total elements = 1, 2, 3, 4, 5, 6</code></pre>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🔸 Bonus Tip for You
+          </h3>
+          <p class="page_paras" style="padding-block: 5px">
+            Use recursion to handle deeply nested arrays.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Don’t use .flat() or .toString()
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Count all non-array elements including strings and booleans.
+          </p>
