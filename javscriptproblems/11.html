@@ -1,0 +1,57 @@
+           <h1 class="page_topic">
+  Day 11 JavaScript Challenge — “Group by Data Type”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    Given a mixed array, return an object where keys are data types and values are arrays of all items of that type.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const input = [1, "hello", true, 42, "world", false, null, undefined, {}, [], () => {}];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+
+<p class="page_paras" style="padding-block: 5px">
+  Loop through the array and check type of each item using <code>typeof</code> (and for arrays use <code>Array.isArray()</code>).
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Group them in an object like:
+</p>
+
+<pre class="language-javascript"><code>{
+  number: [1, 42],  string: ["hello", "world"],
+  boolean: [true, false], object: [null, {}],
+  undefined: [undefined], array: [[]],
+  function: [() => {}]
+}
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧠 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Try solving it without using <code>.reduce()</code> if you want to stay loop-pure.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Handle <code>null</code> and <code>[]</code> properly: <code>typeof null === "object"</code> and <code>Array.isArray([])</code> is <code>true</code>.
+</p>
