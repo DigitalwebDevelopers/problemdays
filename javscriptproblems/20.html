@@ -1,0 +1,52 @@
+<h1 class="page_topic">
+  Day 20 JavaScript Challenge — “Balanced Brackets Checker”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You're given a string that contains only parentheses — round <b>()</b>, curly <b>{}</b>, and square <b>[]</b>. Your task is to determine if the brackets are balanced or not.
+  </p>
+  <p class="page_paras">
+    A string is considered balanced when each opening bracket has a correct closing match in the proper order.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const str = "{[()]}";
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Use a stack-like approach. Push opening brackets. Pop and match when closing ones appear. If at the end stack is empty and no mismatches found — return true.
+</p>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Output:</h3>
+<pre class="language-javascript"><code>true // it's a valid sequence
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Try mapping closing brackets to their opening ones using an object — it makes comparisons cleaner.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Handle edge cases like odd-length strings or unbalanced pairs like "[(])".
+</p>
