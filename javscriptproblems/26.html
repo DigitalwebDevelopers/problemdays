@@ -1,0 +1,69 @@
+        <h1 class="page_topic">
+            Day 26 JavaScript Challenge — “Frequent After K
+            Removal”
+          </h1>
+          <span class="name_credit">
+            <img
+              src="https://www.youtube.com/favicon.ico"
+              alt="credit"
+              class="credit"
+            />
+            <p>Taught By <b>Code with Deepanshu Knox</b></p>
+          </span>
+          <div
+            class="section-separator"
+            style="
+              height: 1px;
+              margin: 18px 0;
+              background: var(--light-gray-color);
+            "
+          ></div>
+
+          <div class="problem_details">
+            <h2 class="page_topic" style="font-size: 1.25rem">
+              🔍 Problem Of the Day —
+            </h2>
+            <p class="page_paras">
+              Given an array of integers and a number <b>k</b>, remove exactly
+              <b>k</b> elements from the array in such a way that the element
+              with the highest frequency remains (or becomes) most frequent in
+              the remaining array. Return that element.
+            </p>
+          </div>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🧪 Example Input:
+          </h3>
+          <pre class="language-javascript"><code>const nums = [4, 3, 1, 1, 2, 3, 3, 4];
+const k = 3;
+</code></pre>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🔸 Your Task to Perform
+          </h3>
+          <p class="page_paras" style="padding-block: 5px">
+            Count frequency of each number. Remove <b>k</b> elements in such a
+            way that **any number becomes most frequent**.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            Return that number which will have highest frequency after these
+            <b>k</b> removals.
+          </p>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🧪 Example Output:
+          </h3>
+          <pre class="language-javascript"><code>3 // removing two 4s and one 1, 3 becomes most frequent
+</code></pre>
+
+          <h3 class="sub_topics" style="padding-top: 10px">
+            🔸 Bonus Tip for You
+          </h3>
+          <p class="page_paras" style="padding-block: 5px">
+            Use Map to count frequencies and think greedy: remove least frequent
+            elements first.
+          </p>
+          <p class="page_paras" style="padding-block: 5px">
+            This problem is also a base version of a heap-based greedy
+            optimization.
+          </p>
