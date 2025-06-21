@@ -1,0 +1,55 @@
+<h1 class="page_topic">
+  Day 17 JavaScript Challenge — “Last Index Matcher”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You’re given a string and a target character. Find the <b>last index</b> where this character occurs.
+    If the character does not exist in the string, return <code>-1</code>.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const str = "javascript is cool";
+const target = "o";
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+
+<p class="page_paras" style="padding-block: 5px">
+  Loop through the string from end to start. As soon as you find the target character, return that index.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Do not use <code>.lastIndexOf()</code> or any built-in search method. Pure loop se karna hai.
+</p>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Output:</h3>
+<pre class="language-javascript"><code>17 // because 'o' last appears at index 17
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Think in reverse: start your loop from the end of the string. First match = last index!
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Try with special characters too like "!" or "#" — should still work.
+</p>
