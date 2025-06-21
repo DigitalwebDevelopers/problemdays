@@ -1,0 +1,61 @@
+<h1 class="page_topic">
+  Day 30 JavaScript Challenge — “Deep Key Finder”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    Given a deeply nested object, write a function to find and return the value of a specified key — no matter how deeply nested it is.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const data = {
+  user: {
+    info: {
+      profile: {
+        name: "Ankit",
+        age: 24,
+      },
+    },
+  },
+};
+
+findKeyDeep(data, "age");
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Traverse the object recursively. If the key matches, return its value. If it’s an object, search deeper. If nothing found, return "Not Found".
+</p>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Output:</h3>
+<pre class="language-javascript"><code>
+24 // This is value of the "age"
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Use recursion to explore deeply nested levels.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Handle arrays inside the object too. Base case: not an object → skip. Loop through keys and go deep if value is object.
+</p>
