@@ -1,0 +1,71 @@
+             <h1 class="page_topic">
+  Day 48 JavaScript Challenge — “Secure PIN Pad Validation”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You're building the logic behind a digital PIN pad for an ATM machine. For extra security, the system **randomly scrambles digits** on the screen every time, and stores the original digit-to-button mapping.
+    <br><br>
+    You receive a **scrambled mapping** and a **user click sequence**. Validate whether the sequence actually matches the correct PIN.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const correctPIN = "3481";
+
+const pinMapping = {
+  A: "3",
+  B: "4",
+  C: "8",
+  D: "1",
+  E: "5",
+};
+
+const userPressed = ["A", "B", "C", "D"];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">
+    Convert user’s click sequence into actual number string using the mapping.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">
+    Compare this generated number string with the original PIN.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">
+    Return <b>"Access Granted"</b> if it matches, otherwise <b>"Access Denied"</b>.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Output:</h3>
+<pre class="language-javascript"><code>Access Granted
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Ensure the mapping is one-way only. Don't reverse it.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Think about edge cases like missing keys, wrong lengths, or extra clicks.
+</p>
