@@ -1,0 +1,65 @@
+<h1 class="page_topic">
+  Day 47 JavaScript Challenge — “Bus Stop Waiting Time Checker”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You’re working with a city transport app. Buses run at scheduled intervals. 
+    You receive a list of bus stop arrival times in minutes (past the hour), and a user’s arrival time. 
+    </p>
+      <p class="page_paras">
+    Your task is to figure out how long they have to wait for the next bus. 
+    If no bus is available, show a message to "Take a cab".
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const busTimings = [5, 15, 25, 40, 55];
+const userTime = 26;
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">
+    Loop through the bus timing array and find the next bus that arrives after the user's time.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">
+    Calculate and print how many minutes they need to wait.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">
+    If no bus is available, print <b>"Take a cab"</b>.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Output:</h3>
+<pre class="language-javascript"><code>Next bus in: 14 minutes
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Don't sort the array. Assume it's already sorted.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Edge Case: If user's time is more than all bus timings — show "Take a cab".
+</p>
