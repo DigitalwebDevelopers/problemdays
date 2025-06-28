@@ -1,0 +1,65 @@
+<h1 class="page_topic">
+  Day 45 JavaScript Challenge — “Parking Ticket Scanner”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You're given a list of vehicle entries and exits from a parking lot.
+    Each vehicle logs its <b>entry and exit times</b> in hours (24-hr format). 
+    Your task is to print out which vehicles stayed more than <b>2 hours</b> in the lot — they should be fined!
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const logs = [
+  { vehicle: "DL01AB1234", in: 9, out: 11 },
+  { vehicle: "HR29CD9988", in: 10, out: 13 },
+  { vehicle: "UP32XY4567", in: 14, out: 15 },
+];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">
+    Use a loop to go through each log.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">
+    If parking duration is more than 2 hours, print a message: "⚠️ Fine for: [Vehicle Number]"
+  </li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">
+    Ignore vehicles with time less than or equal to 2 hours.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Output:</h3>
+<pre class="language-javascript"><code>⚠️ Fine for: HR29CD9988
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Don't use <b>filter</b> or <b>map</b>. Stick to basic loops (like <b>for</b> or <b>for-of</b>).
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  You can add conditions like "₹50 per extra hour" if you want to challenge yourself.
+</p>
