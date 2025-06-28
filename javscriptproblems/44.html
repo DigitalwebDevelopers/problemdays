@@ -1,0 +1,56 @@
+<h1 class="page_topic">
+  Day 43 JavaScript Challenge — “Index Mapping by Value”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    Given an array of values, return an object where each key is the value, and the corresponding value is an array of all the indexes at which that value occurs.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const input = ['a', 'b', 'a', 'c', 'b', 'a'];</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+
+<p class="page_paras" style="padding-block: 5px">
+  Loop through the array. For each value, store its index inside an array under its own key in an object.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  If a value occurs multiple times, collect all its index positions.
+</p>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Output:</h3>
+<pre class="language-javascript"><code>{
+  a: [0, 2, 5],
+  b: [1, 4],
+  c: [3]
+}</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Don’t use <code>filter()</code>. Use a simple loop and a plain object to build the mapping.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Try handling inputs with numbers, strings, and mixed values as keys.
+</p>
