@@ -1,0 +1,67 @@
+<h1 class="page_topic">
+  Day 50 JavaScript Challenge — “Smart Cart Quantity Updater”
+</h1>
+<span class="name_credit"
+  ><img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p></span
+>
+
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You are building a shopping cart system. Customers add the same product
+    multiple times. Each time a product is added, you need to update its quantity instead of duplicating it.
+  </p>
+  <p class="page_paras">
+    Given an array of cart items (each with <b>id</b> and <b>quantity</b>), merge the repeated products by ID and add their quantities together.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const cart = [
+  { id: "p1", quantity: 2 },
+  { id: "p2", quantity: 1 },
+  { id: "p1", quantity: 3 },
+  { id: "p3", quantity: 5 },
+  { id: "p2", quantity: 2 }
+];</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🔸 Your Task to Perform
+</h3>
+
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Loop through the array of cart items</li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Track quantities using a temporary object or map</li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Return a new array with unique items and updated quantities</li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Sample Output:</h3>
+<pre class="language-javascript"><code>[
+  { id: "p1", quantity: 5 },
+  { id: "p2", quantity: 3 },
+  { id: "p3", quantity: 5 }
+]</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Use <b>object</b> or <b>Map</b> to store product ID as key and quantity as value.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Keep your return array clean and sorted (optional).
+</p>
