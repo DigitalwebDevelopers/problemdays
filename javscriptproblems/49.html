@@ -1,0 +1,66 @@
+<h1 class="page_topic">
+  Day 49 JavaScript Challenge — “Movie ShowTime Validator”
+</h1>
+<span class="name_credit"
+  ><img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p></span
+>
+
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You run an online movie ticket system. Users can only book tickets for
+    shows that are scheduled for today or in the future.
+  </p>
+  <p class="page_paras">
+    You are given a list of showtimes with dates in <b>YYYY-MM-DD</b> format.
+    Your job is to filter out any shows that are already past (older than
+    today).
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const shows = [
+  { title: "Avengers", date: "2024-12-30" },
+  { title: "Inception", date: "2023-08-01" },
+  { title: "Interstellar", date: "2025-06-25" },
+];</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🔸 Your Task to Perform
+</h3>
+
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Use today's date (using <code>new Date()</code>)</li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Loop through the shows</li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Return only those shows whose date is today or in the future</li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Sample Output:</h3>
+<pre class="language-javascript"><code>[
+  { title: "Avengers", date: "2024-12-30" },
+  { title: "Interstellar", date: "2025-06-25" }
+]</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<p class="page_paras" style="padding-block: 5px">
+  Remember to convert both dates to the same format (e.g. timestamp) before comparing.
+</p>
+<p class="page_paras" style="padding-block: 5px">
+  Assume user's local timezone unless specified otherwise.
+</p>
