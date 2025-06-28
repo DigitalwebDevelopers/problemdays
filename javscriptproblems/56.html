@@ -1,0 +1,69 @@
+<h1 class="page_topic">
+  Day 56 JavaScript Challenge — “Sort Employees by Salary”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You are managing employee records. Each employee has a name and a salary. Your task is to sort the list of employees in descending order based on their salaries.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🧪 Example Input:
+</h3>
+<pre class="language-javascript"><code>const employees = [
+  { name: "Aditi", salary: 50000 },
+  { name: "Vikram", salary: 75000 },
+  { name: "Riya", salary: 60000 }
+];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🔸 Your Task to Perform
+</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Sort the objects in the array by their <b>salary</b> in descending order.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Avoid using any external libraries — use `.sort()` method in JavaScript.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🧪 Example Output:
+</h3>
+<pre class="language-javascript"><code>[
+  { name: "Vikram", salary: 75000 },
+  { name: "Riya", salary: 60000 },
+  { name: "Aditi", salary: 50000 }
+]
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🔸 Bonus Tip for You
+</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    What if the salary is a string like "75,000"? Convert it to a number first using `.replace()` and `parseInt()` before sorting.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Handle cases where two employees have the same salary.
+  </li>
+</ul>
