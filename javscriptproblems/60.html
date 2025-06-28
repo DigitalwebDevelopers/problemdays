@@ -1,0 +1,68 @@
+<h1 class="page_topic">
+  Day 60 JavaScript Challenge — “Invoice Data & Calculate Total”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+<p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You are building a billing system. Users enter a list of purchased items — each with a price and quantity. Your task is to process this data and return the total bill amount (formatted as currency).
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🧪 Example Input:
+</h3>
+<pre class="language-javascript"><code>const invoice = [
+  { item: "Apple", quantity: 2, price: 30 },
+  { item: "Milk", quantity: 1, price: 50 },
+  { item: "Bread", quantity: 3, price: 20 }
+];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🔸 Your Task to Perform
+</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Multiply price × quantity for each item and add them up.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Return the total amount as a string, prefixed with "₹" (Indian Rupee).
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    If any price or quantity is invalid (not a number or ≤ 0), skip that item.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🧪 Example Output:
+</h3>
+<pre class="language-javascript"><code>"₹170" // Total Bill Amount of User
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🔸 Bonus Tip for You
+</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Use <b>Array.prototype.reduce()</b> to cleanly sum the totals.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Format the final output using template literals or Intl.NumberFormat if needed.
+  </li>
+</ul>
