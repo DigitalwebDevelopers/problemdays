@@ -1,0 +1,50 @@
+             <h1 class="page_topic">
+  Day 51 JavaScript Challenge — “Broken Keyboard”
+</h1>
+<span class="name_credit">
+  <img src="https://www.youtube.com/favicon.ico" alt="credit" class="credit" />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    A user is trying to type a message, but their keyboard is broken. Some of the keys are non-functional (given in an array). You are given two strings:
+  </p>
+  <ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+    <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">`message`: The intended message the user wants to type.</li>
+    <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">`brokenKeys`: An array of characters representing keys that do not work.</li>
+  </ul>
+  <p class="page_paras">
+    Your task is to check whether the user can successfully type the message using the remaining working keys.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const message = "javascript";
+const brokenKeys = ['a', 's', 'v'];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Loop through the `message`</li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">If any character from `message` exists in `brokenKeys`, return `"Message cannot be typed"`</li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Otherwise, return `"Message can be typed"`</li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>// Output: "Message cannot be typed"
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Make it case-insensitive by converting both strings and array values to lower case.</li>
+  <li style="font-family: 'Roboto', sans-serif;line-height: 1.5;font-weight: 500;">Try to use `.includes()` smartly instead of nested loops.</li>
+</ul>
