@@ -1,0 +1,64 @@
+<h1 class="page_topic">
+  Day 58 JavaScript Challenge — “Validate HTML Tag Structure”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+<p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You are building a lightweight HTML validator. The goal is to ensure that every opening tag has a matching closing tag, and the tags are properly nested.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🧪 Example Input:
+</h3>
+<pre class="language-javascript"><code>const htmlSnippet = "&lt;div&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/div&gt;";
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🔸 Your Task to Perform
+</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Parse the string and check whether each opening tag has a matching closing tag.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Tags must close in the correct nested order. Example: <b>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</b> is valid.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Tags like <b>&lt;br&gt;</b> or <b>&lt;img /&gt;</b> (self-closing) should be ignored or handled separately.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🧪 Example Output:
+</h3>
+<pre class="language-javascript"><code>true // Because the tags are balanced and properly nested
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">
+  🔸 Bonus Tip for You
+</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Use a stack to track opening tags. Pop when a correct closing tag is found.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Regular expressions can help extract tags efficiently: <b>/&lt;\/?\w+.*?&gt;/g</b>
+  </li>
+</ul>
