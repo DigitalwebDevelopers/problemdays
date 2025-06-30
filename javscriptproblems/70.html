@@ -1,0 +1,58 @@
+<h1 class="page_topic">
+  Day 70 JavaScript Challenge — “Compute Averages for Readings”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You're building a weather analysis tool that receives hourly temperature readings.  
+    For each reading, compute the <b>running average of the last 3 hours</b> (including current),  
+    returning a new array where each element represents that 3-hour average.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const temps = [20, 22, 21, 19, 24, 20];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Your Task to Perform</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Loop through `temps` and at each index compute average of current and previous two values.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    For the first two entries, compute the average of available readings only.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Return a new array of floating-point averages, rounded to 2 decimal places.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>[20.00, 21.00, 21.00, 20.67, 21.33, 21.00]
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Bonus Tip for You</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Use a sliding window with running sum instead of recomputing sum in each iteration.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    This pattern is used in analytics dashboards, streaming data processing, and IoT sensor data smoothing.
+  </li>
+</ul>
