@@ -1,0 +1,64 @@
+<h1 class="page_topic">
+  Day 64 JavaScript Challenge — “Search by Name Prefix”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You are building a user search feature for a messaging app. Given a list of user objects and a search prefix (a string), return an array of full names that **start with the given prefix** (case-insensitive).
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const users = [
+  { name: "Amit Sharma", id: 1 },
+  { name: "Ankit Rana", id: 2 },
+  { name: "Ravi Kumar", id: 3 },
+  { name: "amisha Sethi", id: 4 }
+];
+
+const searchPrefix = "am";
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Filter the array and return names that start with the given prefix (ignore case).
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    If no name matches, return an empty array.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>["Amit Sharma", "amisha Sethi"]
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Use `.toLowerCase()` on both the prefix and name to ensure case-insensitive matching.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Use `.startsWith()` method instead of regex for better readability.
+  </li>
+</ul>
