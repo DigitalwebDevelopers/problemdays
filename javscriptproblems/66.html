@@ -1,0 +1,60 @@
+<h1 class="page_topic">
+  Day 66 JavaScript Challenge — “Filter Out Duplicate Emails”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    📧 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    Imagine you're building a newsletter signup system. A list of email addresses may contain duplicates (case-insensitive). Your job is to return a new array with **only unique email addresses**, preserving their original order.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const emails = [
+  "user1@example.com", "User1@example.com",
+  "admin@site.com", "test@demo.com",
+  "ADMIN@site.com"
+];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Remove all duplicates regardless of case.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Output the filtered array of emails, maintaining their original order from input.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>[
+  "user1@example.com",
+  "admin@site.com", "test@demo.com"
+]
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Use a <b>Set</b> to track lowercased emails you've already seen.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Preserve order by looping and checking before pushing to the result.
+  </li>
+</ul>
