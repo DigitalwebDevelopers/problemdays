@@ -1,0 +1,53 @@
+<h1 class="page_topic">
+  Day 67 JavaScript Challenge — “Track Response Gaps”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🧾 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    A customer support system logs messages based on timestamps (in minutes). You are given an array of timestamps when customers sent queries.
+  </p>
+  <p class="page_paras">
+    Your task is to calculate the maximum gap between any two queries — i.e., find the largest time where no customer sent a query.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const timestamps = [5, 15, 25, 60, 63];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🎯 Output:</h3>
+<pre class="language-javascript"><code>35 // This is the Track
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Sort the timestamps first.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Find the max difference between consecutive timestamps.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">💡 Real World Use Case</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Call centers can use this to identify idle periods and optimize staff shifts.
+  </li>
+</ul>
