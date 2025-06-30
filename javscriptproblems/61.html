@@ -1,0 +1,63 @@
+             <h1 class="page_topic">
+  Day 61 JavaScript Challenge — “Two Numbers Sum to Target”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+  />
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="
+    height: 1px;
+    margin: 18px 0;
+    background: var(--light-gray-color);
+  "
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size: 1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You have an array of integers and a target sum. Find the indices of two distinct numbers 
+    whose sum equals the target. This is a classic interview-style problem that introduces 
+    you to the **Two Sum** pattern :contentReference[oaicite:3]{index=3}.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Example Input:</h3>
+<pre class="language-javascript"><code>const nums = [2, 7, 11, 15];
+const target = 9;
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Your Task to Perform</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Use a single loop + an object (or `Map`) to record seen numbers.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    For each number, check if (target – current) exists in the record; if yes, return indices.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Return as soon as you find a valid pair.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top: 10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>// Output: [0, 1]
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top: 10px">🔸 Bonus Tip for You</h3>
+<ul class="page_paras" style="padding-block: 5px; padding-left: 20px;">
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Don’t use nested loops — focus on O(n) solution with hashing.
+  </li>
+  <li style="font-family: 'Roboto', sans-serif; line-height: 1.5; font-weight: 500;">
+    Handle negative numbers and zeros too.
+  </li>
+</ul>
