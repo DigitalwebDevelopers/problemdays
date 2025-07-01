@@ -1,0 +1,73 @@
+<h1 class="page_topic">
+  Day 72 JavaScript Challenge — “Form Submission Validator”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background:var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    Imagine you're working on a job application portal. When a user submits a form, the backend receives an object with fields like name, email, phone, and skills.
+    <br /><br />
+    Your task is to create a validation function that:
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Input:</h3>
+<pre class="language-javascript"><code>const formData = {
+  name: "Ritika Sharma",
+  email: "ritika@gmail.com",
+  phone: "894512365",
+  skills: ["JavaScript", "Python", "React"]
+};
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Validation Rules to Implement:</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Name must be a non-empty string.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Email must contain '@' and '.' with correct format.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Phone number must be 10 digits.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Skills must be an array with at least 2 strings.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Output:</h3>
+<pre class="language-javascript"><code>// if everything is valid
+true
+
+// or if something is invalid, return an object like:
+{
+  email: "Invalid email format",
+  phone: "Phone must be 10 digits"
+}
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Bonus Tip</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Validation is a major part of frontend & backend dev. Most apps break here if unchecked.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Use basic conditionals and regex (`/^\d{10}$/`) to validate the phone number.
+  </li>
+</ul>
