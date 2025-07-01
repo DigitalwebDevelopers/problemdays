@@ -1,0 +1,62 @@
+<h1 class="page_topic">
+  Day 86 JavaScript Challenge — “Factorial Primes”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    A <b>factorial prime</b> is a prime number that is either one more or one less than a factorial.
+    <br /><br />
+    For example: 5! + 1 = 121 (not prime), 5! - 1 = 119 (not prime), but 3! - 1 = 5 (prime)
+    <br /><br />
+    Your task is to find all factorial primes less than or equal to a given number <code>n</code>.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Input:</h3>
+<pre class="language-javascript"><code>findFactorialPrimes(100)
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>[2, 3, 5, 7, 23, 719] // All primes that are ±1 of a factorial ≤ 100
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Notes:</h3>
+<ul class="page_paras" style="padding-left: 20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    A factorial is the product of all positive integers ≤ n (e.g. 5! = 5×4×3×2×1 = 120).
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    A number <code>x</code> is factorial prime if either <code>n! + 1</code> or <code>n! - 1</code> is a prime.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top:10px">🧠 Challenge Tip:</h3>
+<ul class="page_paras" style="padding-left: 20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Use a helper function to check primality.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Be careful with large factorials — they grow fast!
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top:10px">🚀 Bonus:</h3>
+<p class="page_paras">
+  Can you optimize it using memoization for factorial calculations?
+</p>
