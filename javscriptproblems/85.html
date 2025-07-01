@@ -1,0 +1,69 @@
+<h1 class="page_topic">
+  Day 85 JavaScript Challenge — “Simulating the Busy Beaver”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    Imagine you're building a Turing Machine simulator. A key test for performance is running the Busy Beaver algorithm — a theoretical construct that attempts to do the most work possible with the least number of instructions.
+    <br /><br />
+    Your job is to simulate a simplified version of the Busy Beaver tape machine.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Rules for This Simplified Busy Beaver:</h3>
+<ul class="page_paras" style="padding-left: 20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    You have a 1D tape (array) filled with 0s initially.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    The machine starts at the middle of the tape.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    For n steps, alternate writing 1 and moving either left or right.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Input:</h3>
+<pre class="language-javascript"><code>simulateBusyBeaver(5)
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>// After 5 steps
+[0, 1, 1, 1, 1, 1, 0] // tape status
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🛠️ Implementation Hints:</h3>
+<ul class="page_paras" style="padding-left: 20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Use an array of length (2 * steps + 1) to center the head.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Alternate writing 1 and moving direction per step.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top:10px">📌 Why This Matters:</h3>
+<ul class="page_paras" style="padding-left: 20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Busy Beaver challenges your understanding of Turing completeness.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Great introduction to building compilers, emulators, or interpreters.
+  </li>
+</ul>
