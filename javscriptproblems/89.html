@@ -1,0 +1,55 @@
+<h1 class="page_topic">
+  Day 89 JavaScript Challenge — “Catalan Number Calculator”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    Catalan numbers form a sequence that has wide applications in mathematics, such as counting valid parentheses, binary search trees, and more.
+    <br /><br />
+    Given a number <code>n</code>, write a function to return the <b>n-th Catalan number</b>.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Input:</h3>
+<pre class="language-javascript"><code>getCatalan(4)
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>14 // Catalian pattern when N = 4
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Formula to Use:</h3>
+<ul class="page_paras" style="padding-left: 20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    C(n) = (2n)! / ((n + 1)! * n!)
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Use recursion or iterative factorial computation.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top:10px">🧠 Bonus Insight:</h3>
+<ul class="page_paras" style="padding-left: 20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    C(0) = 1, C(1) = 1, C(2) = 2, C(3) = 5, C(4) = 14, C(5) = 42 ...
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Used in counting valid combinations of nested brackets and paths in binary trees.
+  </li>
+</ul>
