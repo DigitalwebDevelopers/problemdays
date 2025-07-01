@@ -1,0 +1,56 @@
+<h1 class="page_topic">
+  Day 88 JavaScript Challenge — “Derangement Counter”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    A derangement is a permutation of elements in which no element appears in its original position.
+    <br /><br />
+    You're given <code>n</code> people, each originally assigned to a numbered seat. 
+    Write a function that returns the number of ways the seats can be rearranged so that no person ends up in their original seat.
+    <br /><br />
+    Use recursion for the logic. (Optional: Add memoization to boost performance!)
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Input:</h3>
+<pre class="language-javascript"><code>countDerangements(3)
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>2
+// For 3 people: [2,3,1] and [3,1,2] are valid derangements.
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Constraints</h3>
+<ul class="page_paras" style="padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Input <code>n</code> will be a positive integer ≤ 10
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top:10px">🧠 Bonus Insight:</h3>
+<ul class="page_paras" style="padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Base cases: D(1) = 0 , D(2) = 1
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    The recurrence relation: D(n) = (n - 1) * (D(n - 1) + D(n - 2))
+  </li>
+</ul>
