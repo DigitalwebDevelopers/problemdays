@@ -1,0 +1,67 @@
+<h1 class="page_topic">
+  Day 80 JavaScript Challenge — “The Notification Glitch”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You're building a notification system where new messages should pop up every 2 seconds using <code>setInterval</code>. However, there's a bug — all notifications show the same message number: "Message #5" even though they were supposed to show <code>Message #1</code>, <code>Message #2</code>, and so on.
+    <br /><br />
+    Your task:
+  </p>
+  <ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+      Figure out why the wrong number is shown in each message
+    </li>
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+      Fix the code so it logs the correct message number in each interval
+    </li>
+  </ul>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Buggy Input Code:</h3>
+<pre class="language-javascript"><code>
+function notify() {
+  for (var i = 1; i <= 5; i++) {
+    setTimeout(function () {
+      console.log("📩 Message #" + i);
+    }, i * 2000);
+  }
+}
+
+notify();
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Expected Output:</h3>
+<pre class="language-javascript"><code>
+📩 Message #1
+📩 Message #2
+📩 Message #3
+📩 Message #4
+📩 Message #5
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">💡 Hints & Concepts:</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Understand closures and how <code>var</code> vs <code>let</code> affects scoping
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Use IIFE (Immediately Invoked Function Expression) or <code>let</code> to fix the bug
+  </li>
+</ul>
