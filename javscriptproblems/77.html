@@ -1,0 +1,74 @@
+<h1 class="page_topic">
+  Day 77 JavaScript Challenge — “Newsletter Subscriber Cleaner”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    Suppose you’re managing a newsletter platform and you've received a messy array of subscriber emails. Some are repeated, some invalid, and some are just blank or empty.
+    <br /><br />
+    You need to clean the list and provide a report showing:
+  </p>
+  <ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+      Number of valid emails (no duplicates)
+    </li>
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+     Number of invalid email formats (e.g., "code@@.com")
+    </li>
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+     Number of blank or whitespace-only entries
+    </li>
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+     Final array of unique valid emails
+    </li>
+  </ul>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Input:</h3>
+<pre class="language-javascript"><code>
+const subscribers = [
+  "john@example.com", "  ", "john@example.com",
+  "mary@email.com", "noemail",
+  "code@@dev.com", "admin@site.org"
+];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Output:</h3>
+<pre class="language-javascript"><code>
+{
+  valid: 3, invalid: 2, empty: 1,
+  cleanedEmails: [
+    "john@example.com",
+    "mary@email.com", "admin@site.org"
+  ]
+}
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Bonus Tip</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    A simple regex for email format check is <code>/^[^\s@]+@[^\s@]+\.[^\s@]+$/</code>
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Use <code>Set</code> to remove duplicates efficiently.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Trim whitespace and check if a string is empty using <code>str.trim() === ""</code>
+  </li>
+</ul>
