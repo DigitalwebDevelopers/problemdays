@@ -1,0 +1,61 @@
+<h1 class="page_topic">
+  Day 76 JavaScript Challenge — “Online Store Stock Checker”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You’re helping manage an online store’s inventory. When a customer tries to place an order, you need to check if the quantity requested is available.
+    <br /><br />
+    Your task is to create a function that checks an order object against a stock object, and returns:
+  </p>
+  <ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+      <b>true</b> if all items are in stock with enough quantity
+    </li>
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+      Or an object showing which items are out of stock or short
+    </li>
+  </ul>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Input:</h3>
+<pre class="language-javascript"><code>const stock = {
+  "laptop": 5, "mouse": 10, "keyboard": 2
+};
+
+const order = {
+  "laptop": 2, "mouse": 11, "keyboard": 2
+};
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Expected Output:</h3>
+<pre class="language-javascript"><code>{
+  mouse: "Only 10 in stock"
+}
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Bonus Tip</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Useful in real-time stock validation on checkout pages.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Combine Object.keys, basic conditionals and loops to solve this.
+  </li>
+</ul>
