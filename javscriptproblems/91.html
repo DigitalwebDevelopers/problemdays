@@ -1,0 +1,54 @@
+<h1 class="page_topic">
+  Day 91 JavaScript Challenge — “Message Decoder from Cipher”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You're building a feature for a secret messaging app. Messages are encoded using numbers where:
+    <br /><span style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">• 1 → A, 2 → B, ..., 26 → Z.</span>
+    <br /><br />
+    Your job is to write a function that returns the total number of ways a given numeric string can be decoded into letters.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Inputs:</h3>
+<pre class="language-javascript"><code>decodeWays("12");     // Output: 2   → "AB", "L"
+decodeWays("226");    // Output: 3   → "BZ", "VF", "BBF"
+decodeWays("06");     // Output: 0   → Invalid because no letter starts with 0
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">⚙️ Constraints:</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Input will be a string of digits only (0-9).
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Leading 0s without valid mapping make decoding invalid.
+  </li>
+</ul>
+
+<h3 class="sub_topics" style="padding-top:10px">🧠 Bonus Insight:</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    This problem is a classic case of <b>Dynamic Programming</b>. You can solve it recursively by checking combinations of one and two digits.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Real-world applications include decoding OTPs, license keys, or language pattern predictions.
+  </li>
+</ul>
