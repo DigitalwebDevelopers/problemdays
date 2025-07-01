@@ -1,0 +1,66 @@
+<h1 class="page_topic">
+  Day 78 JavaScript Challenge — “Transaction Log Balancer”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You are working on a digital wallet app. Each user has a transaction log that includes credits and debits as objects with a <b>type</b> ("credit" or "debit") and an <b>amount</b> (number).
+    <br /><br />
+    Your task is to:
+  </p>
+  <ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+      Calculate the final balance
+    </li>
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+     Return an object showing total credits, total debits, and the final balance
+    </li>
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+     If any entry has invalid type or non-numeric amount, ignore it
+    </li>
+  </ul>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Input:</h3>
+<pre class="language-javascript"><code>
+const transactions = [
+  { type: "credit", amount: 1000 }, { type: "debit", amount: 300 },
+  { type: "credit", amount: 500 }, { type: "debit", amount: 200 },
+  { type: "debit", amount: "oops" }, // ignore
+  { type: "invalid", amount: 100 },  // ignore
+];
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Output:</h3>
+<pre class="language-javascript"><code>
+{
+  totalCredit: 1500,
+  totalDebit: 500,  balance: 1000
+}
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🔸 Bonus Tip</h3>
+<ul class="page_paras" style="padding-block:5px; padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Validate amount with <code>typeof x === "number" && !isNaN(x)</code>
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Use <code>reduce()</code> to iterate over transaction logs
+  </li>
+</ul>
