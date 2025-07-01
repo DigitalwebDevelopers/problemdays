@@ -1,0 +1,56 @@
+<h1 class="page_topic">
+  Day 84 JavaScript Challenge — “Jacobsthal Number Generator”
+</h1>
+<span class="name_credit">
+  <img
+    src="https://www.youtube.com/favicon.ico"
+    alt="credit"
+    class="credit"
+/>
+  <p>Taught By <b>Code with Deepanshu Knox</b></p>
+</span>
+
+<div
+  class="section-separator"
+  style="height: 1px; margin: 18px 0; background: var(--light-gray-color);"
+></div>
+
+<div class="problem_details">
+  <h2 class="page_topic" style="font-size:1.25rem">
+    🔍 Problem Of the Day —
+  </h2>
+  <p class="page_paras">
+    You're contributing to a pattern recognition system that models growth and decay rates using alternative number sequences.
+    <br /><br />
+    Your task is to implement a function that returns the <b>nth Jacobsthal number</b>.
+    <br /><br />
+    The sequence is defined recursively as:
+  </p>
+  <ul class="page_paras" style="padding-left: 20px;">
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">J(0) = 0</li>
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">J(1) = 1</li>
+    <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">J(n) = J(n − 1) + 2 × J(n − 2)</li>
+  </ul>
+  <p class="page_paras">
+    This sequence grows differently from Fibonacci, and it's useful in circuits and logic design.
+  </p>
+</div>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Sample Input:</h3>
+<pre class="language-javascript"><code>jacobsthal(5) ➞ 11
+// Sequence: 0, 1, 1, 3, 5, 11, ...
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">🧪 Output:</h3>
+<pre class="language-javascript"><code>11
+</code></pre>
+
+<h3 class="sub_topics" style="padding-top:10px">💡 Bonus Tip:</h3>
+<ul class="page_paras" style="padding-left:20px;">
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    Use dynamic programming or iteration for performance if n > 25.
+  </li>
+  <li style="font-family:'Roboto',sans-serif;line-height:1.5;font-weight:500;">
+    This sequence appears in digital signal processing and recursive state models.
+  </li>
+</ul>
